@@ -17,10 +17,11 @@ import com.zegocloud.uikit.prebuilt.call.invite.ZegoUIKitPrebuiltCallInvitationC
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var myUserId : EditText
-    private lateinit var loginButton : Button
+     lateinit var myUserId : EditText
+     lateinit var loginButton : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_login)
 
         myUserId = findViewById(R.id.myUserId)
         loginButton  = findViewById(R.id.loginButton)
